@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capstone Web App</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background: #357ab8;
+    }
+    .features {
+      padding: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ddd;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Capstone Web App</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Welcome to the App!</h2>
+      <p>This is a fully responsive, optimized capstone project.</p>
+      <button id="ctaButton">Click Me!</button>
+    </section>
+
+    <section class="features">
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive Design</li>
+        <li>Dynamic Content</li>
+        <li>Cross-Browser Compatibility</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Capstone Web App</p>
+  </footer>
+
+  <script>
+    document.getElementById('ctaButton').addEventListener('click', () => {
+      alert('Button clicked! 🎉');
+    });
+  </script>
+</body>
+</html>
